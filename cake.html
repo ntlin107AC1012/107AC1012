@@ -29,7 +29,7 @@
     <div class="layout">
         <!--header-->
         <header class="cake">
-            <img src="./image/cake.png" alt="標題" class="cakeimage">
+            <a href="#tab01" id="cakeimage"><img src="./image/cake.png" alt="標題" class="cakeimage"></a>
             <a href="https://www.facebook.com/">
                 <img src="./image/fb.png" alt="fb" class="fbbtn">
             </a>
@@ -43,7 +43,7 @@
         <!--選單-->
         <nav class="nav">
             <ul class="nav_list">
-                <li  ><a href="#tab01"class="nav_item_a">TOP</a></li>
+                <li  ><a href="#tab01"class="nav_item_a" id="TOP">TOP</a></li>
                 <li ><a href="#tab02" class="nav_item_a">TOPICS</a></li>
                 <li class="nav_item" >
                     <a href="#tab03" class="nav_item_a" id="PRODUCT">PRODUCT</a>
@@ -173,10 +173,15 @@
         </footer>
         <script>
            
-           const btn1 =document.getElementById("PRODUCT");
+            const btn1 =document.getElementById("PRODUCT");
            const btn2 =document.getElementById("nav1");
+           const btn3 =document.getElementById("TOP");
+           const btn4 =document.getElementById("cakeimage");
            btn2.addEventListener("click",()=>{
                btn1.click();
+           });
+           btn4.addEventListener("click",()=>{
+               btn3.click();
            });
                     
         </script>
